@@ -3,6 +3,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: #ddd;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .btns {
     display: flex;
@@ -18,4 +19,25 @@ body {
 .btns button:active {
     background-color: rgba(255, 0, 0, 0.479);
     color: wheat;
+}
+.score-card {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 12rem;
+    gap: 24px;
+}
+.score-card > div {
+    flex: 1;
+}
+.player > h2, .computer > h2 {
+    text-decoration: underline;
+}
+.score {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+.score > p {
+    flex: 1;
 }

@@ -84,13 +84,13 @@ function play() {
 
 let playerScore = 0;
 let computerScore = 0;
-// for (let i = 0; i < 5; i++) {
-//     play();
-// }
-// if (playerScore > computerScore) {
-//     console.log(`PLAYER IS THE WINNER`);
-// } else if (playerScore < computerScore) {
-//     console.log(`COMPUTER IS THE WINNER`);
-// } else {
-//     console.log(`GAME IS TIE`);
-// }
+for (let i = 0; i < 5; i++) {
+    play();
+}
+if (playerScore > computerScore) {
+    console.log(`PLAYER IS THE WINNER`);
+} else if (playerScore < computerScore) {
+    console.log(`COMPUTER IS THE WINNER`);
+} else {
+    console.log(`GAME IS TIE`);
+}
