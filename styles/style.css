@@ -5,39 +5,85 @@ body {
     background-color: #ddd;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.console {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ddd;
+}
+
+.console h1 {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
 .btns {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 12px;
 }
+
 .btns button {
     padding: 18px;
     font-weight: bold;
     font-size: 18px;
 }
+
 .btns button:active {
     background-color: rgba(255, 0, 0, 0.479);
     color: wheat;
 }
+
 .score-card {
     text-align: center;
     display: flex;
     justify-content: space-between;
     margin: 0px 12rem;
     gap: 24px;
+    height: 400px;
+    overflow: auto;
 }
-.score-card > div {
+
+.fixed {
+    position: sticky;
+    top: 23px;
+    left: 23px;
+    background-color: #ddd;
+    margin: 0;
+}
+
+.score-card>div {
     flex: 1;
 }
-.player > h2, .computer > h2 {
-    text-decoration: underline;
+
+.players {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
 }
+
+.players>h2 {
+    text-decoration: underline;
+    margin-bottom: 20px;
+    flex: 1;
+}
+
 .score {
     display: flex;
     align-items: center;
     gap: 40px;
 }
-.score > p {
+
+.score>p {
     flex: 1;
+}
+
+.restartBtn {
+    background-color: black;
+    color: #fff;
+    font-weight: bold;
 }
